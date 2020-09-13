@@ -24,12 +24,12 @@ $ cmake -DCMAKE_INSTALL_PREFIX=<YOUR_INSTALLATON_PATH> ..
 $ make
 ```	
 	
-After Installation copy ***libMR.so*** file generated inside *build/libMR* to */lib* fodler.
+After Installation copy ***libMR.so*** file generated inside *build/libMR* to */lib* folder.
 
 ### Installing library for W-SVM
-Once libMR is build, next step is to specify the absolute path of libMR directory in Makefile available in libsvm-openset.
-Paste the absolute path of libMR folder in variable "LIBMR_DIR" in Makefile (line 2 of Makefile).
-For example: LIBMR_DIR = /home/sathvik/Desktop/OpenSet/W-SVM/libMR
+Once libMR is build, next step is to specify the absolute path of libMR directory in Makefile available in libsvm-openset.  
+Paste the absolute path of libMR folder in variable "LIBMR_DIR" in Makefile (line 2 of Makefile).  
+For example: LIBMR_DIR = /home/sathvik/Desktop/OpenSet/W-SVM/libMR  
 Type ***make*** to build the '*svm-train*' and '*svm-predict*' programs. Run them without arguments to show the usages of them.
 	
 ```sh
@@ -95,7 +95,7 @@ $ ./svm-predict
 	  -C threshold probability value to reject sample as unknowns for CAP model in WSVM(default 0.0) 
 	  
 # Modifications:
-The core file ***svm-predict*** from libsvm-openset is modified to produce output file in comma seperated value format containing both actual and predicted value. (Original output file contains only predicted labels of known class without any separator)
+The core file ***svm-predict*** from libsvm-openset is modified to produce output file in comma seperated value format containing both actual and predicted value. (Original output file contains only predicted labels of known class without any separator)  
 Changes are made to produce output label of '99' for untrained or unknown class.
 		  
 # Usage:
@@ -124,12 +124,12 @@ Changes are made to produce output label of '99' for untrained or unknown class.
 
 	
 # Attribution:
-This is an implementation of the Probability Models for Open Set Recognition by Lalith P Jain and Walter J. Scheirer et al., with minor changes from the original work.
-The link to the original repos is attached herewith:
-libsvm-openset: https://github.com/ljain2/libsvm-openset
-libMR: https://github.com/Vastlab/libMR
+This is an implementation of the Probability Models for Open Set Recognition by Lalith P Jain and Walter J. Scheirer et al., with minor changes from the original work.  
+The link to the original repos is attached herewith:  
+libsvm-openset: https://github.com/ljain2/libsvm-openset  
+libMR: https://github.com/Vastlab/libMR  
 
-The conversion of data from normal format to libsvm format is modified from phraug. The link of original repo is https://github.com/zygmuntz/phraug.
+The conversion of data from normal format to libsvm format is modified from phraug. The link of original repo is https://github.com/zygmuntz/phraug.  
 
 @article{Scheirer_2011_TPAMI,
 author = {Walter J. Scheirer and Anderson Rocha and Ross Michaels and Terrance E. Boult},
