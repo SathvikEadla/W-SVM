@@ -40,7 +40,7 @@ $ ./svm-predict
 ```
 
 
-	***svm-train [options] training_set_file [model_file]***
+	svm-train [options] training_set_file [model_file]
 	options:
 	-s svm_type : set type of SVM (default 0)
 		0 -- C-SVC
@@ -83,7 +83,7 @@ $ ./svm-predict
 	-o cost : set the parameter C for CAP model in one-vs-rest WSVM 
 	-a gamma : set gamma in kernel function for CAP model in one-vs-rest WSVM 
 
-	***svm-predict [options] test_file model_file output_file***
+	svm-predict [options] test_file model_file output_file
 	options:
 	  -b probability_estimates: whether to predict probability estimates, 0 or 1 (default 0); for one-class SVM only 0 is supported
 	  -o: this is an open set problem. this will look for model files with names of the form <model_file>.<class>
